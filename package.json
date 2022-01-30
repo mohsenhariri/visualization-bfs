@@ -1,0 +1,30 @@
+{
+  "name": "bp-js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohsenhariri/bp-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mohsenhariri/bp-js/issues"
+  },
+  "homepage": "https://github.com/mohsenhariri/bp-js#readme",
+  "description": "",
+  "scripts": {
+    "serve": "webpack serve --config webpack.dev.js",
+    "clean": "rm -rf ./dist/*",
+    "build:dev": "webpack --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "pyserve": "python3 -m http.server --directory ./dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.3",
+    "webpack-merge": "^5.8.0"
+  }
+}
