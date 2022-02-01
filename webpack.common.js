@@ -8,6 +8,7 @@ module.exports = {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
+    assetModuleFilename: 'images/[hash][ext][query]'
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -22,9 +23,9 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(ogg|jpe?g|gif)$/i,
-        loader: "file-loader",
-      },
+        test: /\.jpg/,
+        type: 'asset/resource'
+      }
     ],
   },
 };
