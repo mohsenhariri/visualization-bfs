@@ -16,4 +16,18 @@ module.exports = merge(common, {
       cert: fs.readFileSync("./certs/cert.pem"),
     },
   },
+  module: {
+    rules: [
+      {
+        test: /\.tsx?$/,
+        use: {
+          loader: "ts-loader",
+          options: {
+            configFile: "tsconfig.dev.json",
+          },
+        },
+        exclude: /node_modules/,
+      },
+    ],
+  },
 });

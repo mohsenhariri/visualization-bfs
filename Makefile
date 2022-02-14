@@ -1,4 +1,7 @@
 PATH := node_modules/.bin:${PATH}
+SRC = ./src
+DIST = ./dist
+PY = python3
 
 # ifneq (,$(wildcard ./.env))
 #     include .env
@@ -10,10 +13,22 @@ ifneq (,$(wildcard ./.env.dev))
     export
 endif
 
-dev:
-		npm run serve
+# cert:
 
-build:
-		npm run build
+
+dev:
+		webpack serve --config webpack.dev.js
+
+clean:
+		rm -rf $(DIST)/*
+
+build-dev:
+		webpack --config webpack.dev.js
+
+build-prod:
+		webpack --config webpack.prod.js
+
+pyserve:
+		$(PY) -m http.server --directory $(DIST)
 
 .PHONY: all dev clean 
