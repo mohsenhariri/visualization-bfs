@@ -1,23 +1,19 @@
 {
-  "name": "bp-js",
+  "name": "visualization-bfs",
   "version": "1.0.0",
-  "description": "Front-End Boilerplate.",
+  "description": "BFS",
   "main": "./dist/main.bundle.js",
-  "keywords": [
-    "Webpack",
-    "TypeScript",
-    "canvas"
-  ],
+  "keywords": [],
   "author": "Mohsen Hariri <mhariri68@gmail.com> (mohsenhariri.com)",
   "license": "GPLv3",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mohsenhariri/bp-js.git"
+    "url": "git+https://github.com/mohsenhariri/visualization-bfs.git"
   },
   "bugs": {
-    "url": "https://github.com/mohsenhariri/bp-js/issues"
+    "url": "https://github.com/mohsenhariri/visualization-bfs/issues"
   },
-  "homepage": "https://github.com/mohsenhariri/bp-js#readme",
+  "homepage": "https://github.com/mohsenhariri/visualization-bfs#readme",
   "scripts": {
     "dev": "webpack serve --config webpack.dev.js",
     "clean": "rm -rf ./dist/*",
