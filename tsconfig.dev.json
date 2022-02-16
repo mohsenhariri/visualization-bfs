@@ -23,8 +23,8 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     // https://www.typescriptlang.org/tsconfig#noImplicitAny
-    "noImplicitAny": false,
+    "noImplicitAny": true,
     // "allowJs": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
   }
 }
