@@ -14,7 +14,7 @@ ifneq (,$(wildcard ./.env.dev))
 endif
 
 cert:
-		openssl req  -x509  -new   -config ./certs/openssl.conf -out ./certs/cert.pem -keyout ./certs/key.pem
+		openssl req -x509 -new -config ./certs/openssl.conf -out ./certs/cert.pem -keyout ./certs/key.pem
 
 dev:
 		webpack serve --config webpack.dev.js
