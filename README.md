@@ -1,4 +1,4 @@
 DEMO
 
 
-./dist index.html
+gh-pages
